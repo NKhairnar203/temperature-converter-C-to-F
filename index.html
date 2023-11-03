@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <header>
+            <h1>Welcome To,<h1><b><span>Celsius</span> To <span>Fahrenheit</span> Converter</b></h1></h1>
+        </header>
+        <div class="m-box">
+            
+                <table>
+                    <tr>
+                        <td>Degrees Celsius(°C) : </td>
+                        <td><input autocomplete="off" name="Email" id="CD" class="input" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Degrees Fahrenheit(°F): </td>
+                        <td><input autocomplete="off" name="Email" id="FD" class="input" type="text"></td>
+                    </tr>
+                    
+                </table>
+                <button id="button" onclick="changeDeg()"><strong>Convert</strong></button>
+                
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    
+    const changeDeg=() =>{
+        const fv=document.getElementById("CD").value
+        let newcv =fv*(9/5)+32;
+        document.getElementById("FD").value=newcv
+    }
+    
+</script>
